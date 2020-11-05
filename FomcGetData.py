@@ -5,6 +5,7 @@ import pickle
 import sys
 
 from fomc_get_data.FomcMinutes import FomcMinutes
+from fomc_get_data.FomcSpeech import FomcSpeech
 
 def download_data(fomc, start_year):
     df = fomc.get_contents(start_year)
@@ -24,9 +25,14 @@ if __name__ == '__main__':
         start_year = int(args[0])
     
     if (start_year < 1980) or (start_year > 2020):
-        print("Scraping: minutes",)
+        
         print("Please specify the first argument as starting year between 1980 and 2020")
         sys.exit(1)
 
+    print("Scraping: minutes")
     fomc = FomcMinutes()
+    download_data(fomc, start_year)
+
+    print("Scraping: speeches")
+    fomc = FomcSpeech()
     download_data(fomc, start_year)
