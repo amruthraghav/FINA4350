@@ -128,6 +128,12 @@ class FomcBase(metaclass=ABCMeta):
         self.df.reset_index(drop=True, inplace=True)
         return self.df
 
+    def clean(self, s):
+        s=s.replace('\n','')
+        s=s.replace('\r','')
+        s=s.replace('\'','')
+        return s
+      
     def pickle_dump_df(self, filename="output.pickle"):
         '''
         Dump an internal DataFrame df to a pickle file
@@ -136,8 +142,13 @@ class FomcBase(metaclass=ABCMeta):
         print("")
         if self.verbose: print("Writing to ", filepath)
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+        clean_df = self.df.copy()
+        clean_df.contents = clean_df.contents.apply(self.clean)
+
         with open(filepath, "wb") as output_file:
-            pickle.dump(self.df, output_file)
+            pickle.dump(clean_df, output_file)
+
 
     def save_texts(self, prefix="FOMC_", target="contents"):
         '''
