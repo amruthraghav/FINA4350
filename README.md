@@ -26,7 +26,7 @@ Please refer to the above link for Data with all the files: [link to Data!](http
    `python FomcGetData.py all 1980`
 2. Get calendar from FOMC Website.</br>
    `python FomcGetCalendar.py 1980`
-3. Get data from Quandl. Specify the API Key and the date (yyyy-mm-dd).
+3. Get data from Quandl. Specify the API Key and the date (yyyy-mm-dd).</br>
    `python QuandlGetData.py [the API Key] 1980-01-01`
 4. To Run Notebook
     1. Go to top directory</br>
