@@ -8,11 +8,11 @@ Please refer to the post for a comprehensive understanding, project overview and
 
 ## 2. Create the directories
 
-Run the following to create the directories:
+Run the following in the terminal to create the directories:
 
 ```
-mkdir data && cd $_
-mkdir FOMC MarketData LoughranMcDonald GloVe preprocessed models train_data result
+mkdir data
+mkdir FOMC MarketData LoughranMcDonald GloVe preprocessed models result
 cd FOMC
 mkdir statement minutes presconf_script meeting_script script_pdf speech testimony chair
 cd ../MarketData
