@@ -10,6 +10,12 @@ Please refer to the post for a comprehensive understanding, project overview and
 
 Run the following to create the directories
 
+```
+git status
+git add
+git commit
+```
+
 `cd ./data`
 `mkdir FOMC MarketData LoughranMcDonald GloVe preprocessed models result`
 `cd FOMC`
