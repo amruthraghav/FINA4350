@@ -7,13 +7,13 @@ Blog Post can be checked out here: https://financiallinguists.wordpress.com/
 Please refer to the post for a comprehensive understanding, project overview and analysis result.
 
 ## 2. Create the directories
-
-cd data
-mkdir FOMC MarketData LoughranMcDonald GloVe preprocessed models result
-cd FOMC
-mkdir statement minutes presconf_script meeting_script script_pdf speech testimony chair
-cd ../MarketData
-    
+    ```
+    cd data
+    mkdir FOMC MarketData LoughranMcDonald GloVe preprocessed models result
+    cd FOMC
+    mkdir statement minutes presconf_script meeting_script script_pdf speech testimony chair
+    cd ../MarketData
+    ``` 
 
 Please refer to the above link for Data with all the files: [link to Data!](https://drive.google.com/drive/folders/10QyQ-nvP4x7hPWwX5JCOkxCf6-NJ_ViS?usp=sharing)
 
