@@ -7,7 +7,9 @@ Blog Post can be checked out here: https://financiallinguists.wordpress.com/
 Please refer to the post for a comprehensive understanding, project overview and analysis result.
 
 ## 2. Create the directories
-  
+
+Run the following to create the directories
+
 `cd ./data`
 `mkdir FOMC MarketData LoughranMcDonald GloVe preprocessed models result`
 `cd FOMC`
