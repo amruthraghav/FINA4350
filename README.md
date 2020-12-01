@@ -24,7 +24,7 @@ Please refer to the above link for Data with all the files: [link to Data!](http
 ## 3.Running the Files
 1. Get data from FOMC Website by specifying which year.</br>
    `python FomcGetData.py all 1980`
-2 . Get calendar from FOMC Website.</br>
+2. Get calendar from FOMC Website.</br>
    `python FomcGetCalendar.py 1980`
 3. Get data from Quandl. Specify the API Key and the date (yyyy-mm-dd).
    `python QuandlGetData.py [the API Key] 1980-01-01`
